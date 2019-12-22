@@ -1,0 +1,50 @@
+
+body{
+	overflow-x: hidden;
+	font-family: 'Roboto', sans-serif;
+	color: red;
+}
+
+.navbar{
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: .8rem;
+	letter-spacing: .1rem;
+}
+
+.navbar-nav li{
+	padding-right: .9rem;
+}
+
+.home-inner{
+	background-image: url(images/ava.jpeg);
+}
+
+.caption{
+	width: 100%;
+	max-width: 100%;
+	position: absolute;
+	top: 70%;
+	z-index: 1;
+	color: white;
+	text-transform: uppercase;
+}
+
+.caption h1{
+	letter-spacing: .1rem;
+	font-size: 4rem;
+	padding-bottom: 0.5rem;
+}
+
+.caption h3{
+	letter-spacing: .1rem;
+	font-size: 2rem;
+	padding-bottom: 1.6rem;
+}
+
+.btn{
+	border-width: medium;
+	border-radius: 0;
+	font-weight: 700;
+	letter-spacing: .1rem;
+}
