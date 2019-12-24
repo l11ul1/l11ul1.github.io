@@ -1,11 +1,9 @@
-
 body{
 	overflow-x: hidden;
-	font-family: 'Roboto', sans-serif;
-	color: red;
 }
 
-.navbar{
+.navbar {
+	background: rgba(0, 0, 0, 0.6)!important;
 	text-transform: uppercase;
 	font-weight: 600;
 	font-size: .8rem;
@@ -33,7 +31,7 @@ body{
 .caption h1{
 	letter-spacing: .1rem;
 	font-size: 4rem;
-	padding-bottom: 0.5rem;
+	padding-bottom: 0.3rem;
 }
 
 .caption h3{
@@ -42,9 +40,38 @@ body{
 	padding-bottom: 1.6rem;
 }
 
-.btn{
-	border-width: medium;
-	border-radius: 0;
+.btn-lg {
+	border-width: medium!important;
+	border-radius: 0!important;
 	font-weight: 700;
 	letter-spacing: .1rem;
+}
+
+.narrow{
+	width: 75%!important;
+	margin: 1.5rem auto!important;
+}
+
+.narrow h1{
+	padding-bottom: 1rem;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+	font-weight: 700;
+}
+
+.aboutMe img{
+	width: 100%;
+}
+
+.aboutMe p{
+	padding-top: 5rem; 
+	font-weight: 400;
+	text-align: left;
+}
+
+.heading-underline{
+	width: 3rem;
+	height: .2rem;
+	background-color: black;
+	margin: 0 auto 2rem;
 }
