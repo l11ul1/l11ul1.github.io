@@ -60,11 +60,12 @@ body{
 }
 
 .aboutMe img{
-	width: 100%;
+	max-width: 100%;
+	height: auto;
 }
 
 .aboutMe p{
-	padding-top: 5rem; 
+	padding-top: 8rem; 
 	font-weight: 400;
 	text-align: left;
 }
@@ -75,3 +76,56 @@ body{
 	background-color: black;
 	margin: 0 auto 2rem;
 }
+
+@media(max-width: 800px){
+	.caption{
+		top: 60%;
+	}
+	
+	.caption h1{
+		font-size: 4rem;
+	}
+
+	.caption h3{
+		font-size: 2rem;
+	}
+}
+
+@media(max-width: 633px){
+		.caption h1{
+		font-size: 2rem;
+	}
+
+	.caption h3{
+		font-size: 1rem;
+	}
+}
+
+
+@media(max-width: 1593px){
+	.aboutMe p{
+	padding-top: 7rem; 
+	}
+}
+
+@media(max-width: 1500px){
+	.aboutMe p{
+	padding-top: 4rem; 
+	}
+}
+
+
+@media(max-width: 1365px){
+	.aboutMe p{
+	padding-top: 3rem; 
+	}
+}
+
+@media(max-width: 1244px){
+	.aboutMe p{
+	padding-top: 0rem; 
+	}
+}
+
+
+
