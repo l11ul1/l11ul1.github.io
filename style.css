@@ -3,7 +3,6 @@ body{
 }
 
 .navbar {
-	background: rgba(0, 0, 0, 0.6)!important;
 	text-transform: uppercase;
 	font-weight: 600;
 	font-size: .8rem;
@@ -101,6 +100,17 @@ body{
 	}
 }
 
+@media(max-height: 750px){
+	.caption{
+		top: 60%;
+	}
+}
+
+@media(max-height: 560px){
+	.caption{
+		top: 40%;
+	}
+}
 
 @media(max-width: 1593px){
 	.aboutMe p{
@@ -119,6 +129,7 @@ body{
 	.aboutMe p{
 	padding-top: 3rem; 
 	}
+
 }
 
 @media(max-width: 1244px){
@@ -128,4 +139,83 @@ body{
 }
 
 
+.card{
+	padding: 0;
+	overflow: hidden;
+	border-radius: 0!important;
+	border-width: medium!important;
+}
 
+.btn-sm {
+	border-width: medium!important;
+	border-radius: 0!important;
+	font-weight: 700;
+	letter-spacing: .1rem;
+}
+
+@media(max-width: 1555px){
+	.card{
+	width: 15rem!important;
+	height: 17rem!important;
+	}
+}
+
+
+@media(max-width: 1350px){
+	.card{
+	width: 13rem!important;
+	height: 17rem!important;
+	}
+}
+
+@media(max-width: 1200px){
+	.card{
+	width: 18rem!important;
+	height: 14rem!important;
+	}
+}
+
+.skills img{
+	width: 50px;
+	height: 50px;
+}
+
+.skills h6{
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+}
+
+td{
+	border: none!important;
+}
+
+table{
+	table-layout: fixed;
+	word-wrap: break-word;
+}
+
+
+#contact h1{
+	color: white;
+	padding-top: 3rem;
+	padding-bottom: 1rem;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+	font-weight: 700;
+}
+
+#contact .heading-underline{
+	background-color: white;
+}
+
+.contact-form input{
+	border-radius: 0!important;
+}
+
+.contact-form textarea{
+	border-radius: 0!important;
+}
+
+.contact-form a{
+	text-transform: uppercase;
+}

@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="css/fixed.css">
 		<link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
-		
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -35,7 +34,7 @@
             				<a class="nav-link" href="#projects">projects</a>
 						</li>
 						<li class="nav-item">
-            				<a class="nav-link" href="#usefulSkills">useful skills</a>
+            				<a class="nav-link" href="#skills">skills</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#contact">contact</a>
@@ -56,7 +55,7 @@
 			<div class="caption text-center">
 				<h1>welcome to munv</h1>
 				<h3>mun vladislav's web resume</h3>
-				<a class="btn btn-outline-light btn-lg" href="projects">my works</a>
+				<a class="btn btn-outline-light btn-lg" href="#projects">my works</a>
 			</div>
 			<!-- End of Landing Page -->
 		</div>
@@ -81,22 +80,115 @@
 		<!-- End of About Me Section -->
 		
 		<!-- Projects Section -->
-		<div id="projects" class="offset">
-		 
+		<div id="projects" class="offset jumbotron jumbotron-fluid" style="background: rgb(230, 230, 230);">
+			
+			<div class="col-12 narrow text-center">
+				<h1>My Projects</h1>
+				<div class="heading-underline"></div>
+				<p class="lead">Here is some of my small projects and assignmnets from the github.</p>
+				 <hr class="my-4 rgba-white-light">
+				<a class="btn btn-secondary btn-lg" id="getWorks">my works</a>
+				<div class="card-deck">
+					<div class="row" id="myWorks">
+					
+					</div>
+				</div>
+			</div>
 		</div>
 		<!-- End of Projects Section -->
 		
 		<!-- Useful Skills Section -->
-		<div id="usefulSkills" class="offset">
-		
+		<div id="skills" class="offset">
+			<div class="col-12 narrow text-center skills">
+				<h1>Skills</h1>
+				<div class="heading-underline"></div>
+				
+				<table class="table">
+				  <tbody>
+					<tr>
+					  <td><img src="icons/css3.png">
+						  <p>css</p>
+						</td>
+					  <td><img src="icons/c-plus-plus.png">
+						<p>C++</p>
+						</td>
+					  <td><img src="icons/cs.png">
+						<p>C#</p>
+						</td>
+					  <td><img src="icons/sql.png">
+						<p>SQL</p>
+						</td>
+					</tr>
+					<tr>
+					  <td><img src="icons/py.png">
+						<p>python</p>
+						</td>
+					  <td><img src="icons/java.png">
+						<p>java</p>
+						</td>
+					  <td><img src="icons/swift.png">
+						<p>swift</p>
+						</td>
+					  <td><img src="icons/javascript.png">
+						<p>javascript</p>
+						</td>
+					</tr>
+					  <tr>
+						  <td colspan="4"></td>
+					  </tr>
+					<tr>
+					  <td><img src="icons/patient.png">
+						  <p>patient</p>
+						</td>
+					  <td><img src="icons/communicative.png">
+						<p>communicative</p>
+						</td>
+					  <td><img src="icons/team-work.png">
+						<p>team worker</p>
+						</td>
+					  <td><img src="icons/on-time.png">
+						<p>reliable</p>
+						</td>
+					</tr>
+				  </tbody>
+				</table>
+			</div>
 		</div>
 		<!-- End of Useful Skills Section -->
 		
 		<!-- Useful Skills Section -->
-		<div id="contact" class="offset">
-		
+		<div id="contact" class="offset text-center bg-secondary">
+						                <h1>Contact Me</h1>
+				<div class="heading-underline"></div>
+		<div class="container contact-form">
+            <form action="mails.php" method="post" name="form">
+               <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                        </div>
+                    </div>
+                </div>
+				<div class="row">
+				    <div class="form-group col-md-12">
+                    	<a type="submit" name="submit" class="btn btn-outline-light btn-lg text-light">send a message</a>
+                	</div>
+				</div>
+            </form>
+</div> 
 		</div>
-		<!-- End of Useful Skills Section -->
-		
+		 <!-- End of Useful Skills Section -->
+		<script src="main.js"></script>
 	</body>
 </html>
